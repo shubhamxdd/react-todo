@@ -22,6 +22,11 @@ export const AddTodo = ({addTodo}) => {
             marginTop: "4rem",
             marginBottom: "3rem"
     }
+
+    // const clearr = ()=>{
+    //   console.clear()
+    // }
+
   return (
     <div className="container" style={headerStyle}>
       <h3>Add a new Todo item</h3>
