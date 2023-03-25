@@ -6,7 +6,7 @@ export const Footer = () => {
       className="bg-dark text-light py-3 footer"
       style={{ marginTop: "80px" }}
     >
-      <p className="text-center">Copyright &copy; mera</p>
+      <p className="text-center">Copyright &copy; Shubham</p>
     </footer>
   );
 };

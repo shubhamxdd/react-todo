@@ -12,7 +12,6 @@ const FinalTodoComp = () => {
       initTodo = JSON.parse(localStorage.getItem("todos"))
     }
     const onDelete = (todo) => {
-      console.log("deleted", todo);
       setTodos(
         todos.filter((e) => {
           return e !== todo;
@@ -23,7 +22,6 @@ const FinalTodoComp = () => {
   
     
     const addTodo = (title, desc) => {
-      console.log("adding title", title, "and desc", desc);
       let sno;
       if(todos.length===0){
         sno = 0;
@@ -37,7 +35,7 @@ const FinalTodoComp = () => {
         desc: desc,
       };
       setTodos([...todos, myTodo]);
-      console.log(myTodo);
+      // console.log(myTodo);
     };
 
     const [todos, setTodos] = useState(initTodo);
