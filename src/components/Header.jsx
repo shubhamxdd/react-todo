@@ -41,15 +41,6 @@ export default function Header(props) {
                   Contact
                 </Link>
               </li>
-              {props.contact2 ? (
-                <li className="nav-item">
-                  <Link className="nav-link" to="#">
-                    Contact
-                  </Link>
-                </li>
-              ) : (
-                <button className="btn btn-primary">aein</button>
-              )}
             </ul>
           </div>
         </div>
