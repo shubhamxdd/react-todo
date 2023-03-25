@@ -1,7 +1,7 @@
 import React from "react";
 import { TodoItem } from "./TodoItem";
 
-export const Todos = (props) => {
+const Todos = (props) => {
   return (
     <div className="container" style={{ minHeight: "80vh" }}>
       <h2 className="my-2">Todo list</h2>
@@ -9,11 +9,11 @@ export const Todos = (props) => {
         ? "Nothing to display"
         : props.todos.map((todo) => {
             return (
-                <> 
-              <TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete} /> <br/>
-                </>
+              <TodoItem todo={todo} key={todo.sno} onDelete={props.onDelete} />
             );
           })}
     </div>
   );
 };
+
+export default Todos;
